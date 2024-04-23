@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
+//import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class MyHistory extends StatefulWidget {
   const MyHistory({super.key});
@@ -14,12 +14,12 @@ class MyHistoryState extends State<MyHistory> {
   @override
   void initState() {
     super.initState();
-    initBannerAd();
+    //initBannerAd();
   }
 
-  late BannerAd bannerAd;
+  //late BannerAd bannerAd;
   bool isAdLoaded = false;
-
+/*
   initBannerAd() {
     bannerAd = BannerAd(
       size: AdSize.banner,
@@ -36,7 +36,7 @@ class MyHistoryState extends State<MyHistory> {
       request: const AdRequest(),
     );
     bannerAd.load();
-  }
+  }*/
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 

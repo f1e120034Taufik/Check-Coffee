@@ -56,7 +56,7 @@ dependencies:
   #internet_connection_checker: ^1.0.0+1
   provider: ^6.0.5
   connectivity_plus: ^5.0.2
-  google_mobile_ads: ^4.0.0
+  #google_mobile_ads: ^4.0.0
   firebase_app_check: ^0.2.1+8
   code_uml : ^0.0.1
   http: ^1.2.0
