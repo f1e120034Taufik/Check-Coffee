@@ -2,8 +2,8 @@ import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:multi_input_apk/Fitur/Akun%20User/Autentikasi/register.dart';
 import 'package:multi_input_apk/main.dart';
-import 'package:multi_input_apk/register.dart';
 import 'package:flutter_pw_validator/flutter_pw_validator.dart';
 
 class MyLogin extends StatefulWidget {

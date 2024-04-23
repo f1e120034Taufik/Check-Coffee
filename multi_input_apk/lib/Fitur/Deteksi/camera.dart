@@ -7,11 +7,11 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:multi_input_apk/jenisliberika.dart';
-import 'classifer.dart';
-import 'classifer_float.dart';
-import 'jenisarabika.dart';
-import 'jenisrobusta.dart';
+import 'package:multi_input_apk/Fitur/Deteksi/classifer.dart';
+import 'package:multi_input_apk/Fitur/Deteksi/classifer_float.dart';
+import 'package:multi_input_apk/Fitur/Jenis%20Kopi/Jenis-Jenis%20Kopi/jenisarabika.dart';
+import 'package:multi_input_apk/Fitur/Jenis%20Kopi/Jenis-Jenis%20Kopi/jenisliberika.dart';
+import 'package:multi_input_apk/Fitur/Jenis%20Kopi/Jenis-Jenis%20Kopi/jenisrobusta.dart';
 import 'package:tflite_flutter_helper/tflite_flutter_helper.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -20,7 +20,9 @@ import 'package:percent_indicator/percent_indicator.dart';
 import 'package:image/image.dart' as img;
 
 class Camera extends StatefulWidget {
-  const Camera({super.key});
+  const Camera({
+    super.key,
+  });
   @override
   MyCameraState createState() => MyCameraState();
 }
@@ -32,11 +34,18 @@ class MyCameraState extends State {
   void initState() {
     super.initState();
     koneksi();
-    Future.delayed(const Duration(seconds: 8), () {
-      setState(() {
-        showProgress = false;
-      });
-    });
+    Future.delayed(
+      const Duration(
+        seconds: 8,
+      ),
+      () {
+        setState(
+          () {
+            showProgress = false;
+          },
+        );
+      },
+    );
   }
 
   final firestore = FirebaseFirestore.instance;
@@ -353,25 +362,41 @@ class MyCameraState extends State {
                           ),
                         ),
                         Container(
-                            margin: const EdgeInsets.symmetric(
-                              horizontal: 25.0,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Icon(
-                                  Icons.warning,
-                                  color: Color.fromARGB(255, 255, 140, 0),
-                                  size: 25.0,
+                          margin: const EdgeInsets.symmetric(
+                            horizontal: 25.0,
+                          ),
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.warning,
+                                color: Color.fromARGB(
+                                  255,
+                                  255,
+                                  140,
+                                  0,
                                 ),
-                                Text('    '),
-                                Text('Warning',
-                                    style: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color.fromARGB(255, 134, 58, 0)))
-                              ],
-                            )),
+                                size: 25.0,
+                              ),
+                              Text(
+                                '    ',
+                              ),
+                              Text(
+                                'Warning',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromARGB(
+                                    255,
+                                    134,
+                                    58,
+                                    0,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                         Container(
                           margin: const EdgeInsets.symmetric(
                             horizontal: 25.0,
@@ -578,11 +603,11 @@ class MyCameraState extends State {
                                                         ),
                                                       ),
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       '* Tingkat kemiripan terlalu rendah',
                                                       textAlign:
                                                           TextAlign.center,
-                                                      style: const TextStyle(
+                                                      style: TextStyle(
                                                         fontWeight:
                                                             FontWeight.bold,
                                                         fontSize: 12,
@@ -590,11 +615,11 @@ class MyCameraState extends State {
                                                             255, 163, 87, 0),
                                                       ),
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       'Hasil deteksi diragukan',
                                                       textAlign:
                                                           TextAlign.center,
-                                                      style: const TextStyle(
+                                                      style: TextStyle(
                                                         fontWeight:
                                                             FontWeight.bold,
                                                         fontSize: 12,
@@ -1021,12 +1046,11 @@ class MyCameraState extends State {
                                                             ),
                                                           ),
                                                         ),
-                                                        Text(
+                                                        const Text(
                                                           '* Tingkat kemiripan terlalu rendah',
                                                           textAlign:
                                                               TextAlign.center,
-                                                          style:
-                                                              const TextStyle(
+                                                          style: TextStyle(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontSize: 12,
@@ -1038,12 +1062,11 @@ class MyCameraState extends State {
                                                                     0),
                                                           ),
                                                         ),
-                                                        Text(
+                                                        const Text(
                                                           'Hasil deteksi diragukan',
                                                           textAlign:
                                                               TextAlign.center,
-                                                          style:
-                                                              const TextStyle(
+                                                          style: TextStyle(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontSize: 12,

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:multi_input_apk/jeniskopi.dart';
-import 'package:multi_input_apk/pengolahankopi.dart';
-import 'package:multi_input_apk/produkkopi.dart';
-import 'package:multi_input_apk/quiz.dart';
-import 'package:multi_input_apk/tipsberkebun.dart';
-import 'camera.dart';
+import 'package:multi_input_apk/Fitur/Deteksi/camera.dart';
+import 'package:multi_input_apk/Fitur/Jenis%20Kopi/jeniskopi.dart';
+import 'package:multi_input_apk/Fitur/Pengolahan%20Kopi/pengolahankopi.dart';
+import 'package:multi_input_apk/Fitur/Produk%20Kopi/produkkopi.dart';
+import 'package:multi_input_apk/Fitur/Quiz/quiz.dart';
+import 'package:multi_input_apk/Fitur/Tips%20Berkebun/tipsberkebun.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});

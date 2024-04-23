@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:multi_input_apk/Pengembang.dart';
-import 'package:multi_input_apk/login.dart';
+import 'package:multi_input_apk/Fitur/Akun%20User/Autentikasi/login.dart';
+import 'package:multi_input_apk/Fitur/Akun%20User/Pengembang.dart';
 import 'package:multi_input_apk/main.dart';
 
 class MyProfile extends StatefulWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:multi_input_apk/jenisarabika.dart';
-import 'package:multi_input_apk/jenisliberika.dart';
-import 'package:multi_input_apk/jenisrobusta.dart';
+import 'package:multi_input_apk/Fitur/Jenis%20Kopi/Jenis-Jenis%20Kopi/jenisarabika.dart';
+import 'package:multi_input_apk/Fitur/Jenis%20Kopi/Jenis-Jenis%20Kopi/jenisliberika.dart';
+import 'package:multi_input_apk/Fitur/Jenis%20Kopi/Jenis-Jenis%20Kopi/jenisrobusta.dart';
 
 class MyTipsBerkebun extends StatefulWidget {
   const MyTipsBerkebun({super.key});
