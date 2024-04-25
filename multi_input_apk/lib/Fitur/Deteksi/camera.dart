@@ -1148,7 +1148,7 @@ class MyCameraState extends State {
                                           children: [
                                             TableRow(
                                               children: [
-                                                Container(
+                                                SizedBox(
                                                   height: 100,
                                                   child: Row(
                                                     mainAxisAlignment:
