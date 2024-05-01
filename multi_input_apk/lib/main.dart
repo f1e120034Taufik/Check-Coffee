@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:multi_input_apk/Fitur/Akun%20User/profile.dart';
-import 'package:multi_input_apk/Fitur/history.dart';
+import 'package:multi_input_apk/Fitur/Deteksi/history.dart';
 import 'package:multi_input_apk/Fitur/home.dart';
 //import 'package:firebase_app_check/firebase_app_check.dart';
 
